@@ -16,10 +16,12 @@ import { MenuComponent } from './restaurant-detail/menu/menu.component';
 import { CartComponent } from './restaurant-detail/cart/cart.component';
 import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component';
 import { MenuItemComponent } from './restaurant-detail/menu/menu-item/menu-item.component';
+import { InputContainerComponent } from './shared/input-container/input-container.component';
 
 import { RestaurantsService } from './restaurants/restaurants.service';
 import { CartService } from './restaurant-detail/cart/cart.service';
 import { OrderComponent } from './order/order.component';
+
 
 @NgModule({
 	declarations: [
@@ -34,7 +36,8 @@ import { OrderComponent } from './order/order.component';
 		CartComponent,
 		ReviewsComponent,
 		MenuItemComponent,
-		OrderComponent
+		OrderComponent,
+		InputContainerComponent
 	],
 	imports: [ BrowserModule, HttpModule, RouterModule.forRoot(ROUTES), FormsModule ],
 	providers: [ RestaurantsService, CartService, { provide: LOCALE_ID, useValue: 'pt-BR' } ],
