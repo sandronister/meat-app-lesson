@@ -17,10 +17,12 @@ import { CartComponent } from './restaurant-detail/cart/cart.component';
 import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component';
 import { MenuItemComponent } from './restaurant-detail/menu/menu-item/menu-item.component';
 import { InputContainerComponent } from './shared/input-container/input-container.component';
+import { RadioComponent } from './shared/radio/radio.component';
 
 import { RestaurantsService } from './restaurants/restaurants.service';
 import { CartService } from './restaurant-detail/cart/cart.service';
 import { OrderComponent } from './order/order.component';
+
 
 
 @NgModule({
@@ -37,7 +39,8 @@ import { OrderComponent } from './order/order.component';
 		ReviewsComponent,
 		MenuItemComponent,
 		OrderComponent,
-		InputContainerComponent
+		InputContainerComponent,
+		RadioComponent
 	],
 	imports: [ BrowserModule, HttpModule, RouterModule.forRoot(ROUTES), FormsModule ],
 	providers: [ RestaurantsService, CartService, { provide: LOCALE_ID, useValue: 'pt-BR' } ],
